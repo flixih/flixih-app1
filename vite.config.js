@@ -10,6 +10,13 @@ export default defineConfig({
     },
   },
   server: {
-    allowedHosts: "all",
+    allowedHosts: [
+      "all",
+      ".base44.app",
+      ".modal.host",
+      ".w.modal.host",
+    ],
+    host: true,
+    strictPort: false,
   },
 });
